@@ -1,0 +1,80 @@
+/* Use dark mode with black background & white text. */
+body {
+    padding: 50px;
+    background-color: #222222;
+    font-family: 'Poppins';
+    color: #ffffff;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* Use flexbox to center all items (including tasks, input fields, etc.) */
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+/* Style the input field. */
+#inputContainer #inputField {
+    padding: 10px;
+    border: 2px solid #af36ff;
+    border-radius: 4px;
+    width: 315px;
+    font-family: 'Poppins';
+    font-size: 16px;
+}
+
+/* Style all buttons on the page . */
+.btn {
+    padding: 11px 20px 11px 20px;
+    margin: 15px 0px 15px 15px;
+    background-color: #af36ff;
+    border-style: none;
+    border-radius: 4px;
+    font-family: 'Poppins';
+    font-size: 16px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+/* Style the task items. */
+li {
+    list-style: none;
+    color: #000000;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    margin-bottom: 15px;
+    min-width: 400px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+li:hover {
+    opacity: 0.8;
+}
+
+/* Change the color and add strikethrough for completed tasks. */
+li.clicked {
+    background-color: #af36ff;
+    opacity: 0.8;
+    color: #ffffff;
+    text-decoration: line-through;
+}
+
+ul {
+    padding: 0px;
+}
+
+canvas {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
